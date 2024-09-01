@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Youth Career Connect!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class="TitlePage">
+    <div class="navBar"> <!-- Nav Bar -->
+        <div class="navBarLeft">
+            <a href="#hero" class="navBarLogo">YCC</a>
+            <a href="#about" class="navBarPage">About</a>
+            <a href="#meetTheTeam" class="navBarPage">Meet the Team</a>
+            <a href="#FAQ" class="navBarPage">FAQ</a>
+        </div>
+        <div class="navBarRight">
+          <a href="https://forms.gle/sDAeFmdhPwKbTUnF6" class="navBarPage">Sign Up</a>
+          <div class="navBarButton">
+            <a class="navBarButtonText">Contact</a>
+          </div>
+        </div>
+    </div>
+
+    <div class="hero"> <!-- Hero -->
+        <div class="heroLeft">
+            <div class="heroTitle">EXPLORE </br> YOUR </br> POTENTIAL</div>
+            <div class="heroDesc">With colleges becoming more and more competitive, it has become increasingly necessary for students to start preparing for their journey early. As a student-led nonprofit that guides aspiring, young students toward potential career paths, <b>Youth Career Connect</b> hopes to open the door of self-discovery and help students find their passions early on.</div>
+          <div class="heroButtonContainer">
+            <a href="https://forms.gle/sDAeFmdhPwKbTUnF6" class="heroButton">Sign Up</a>
+            <a class="heroPage">Contact</a>
+          </div>
+        </div>
+        <div class="heroRight">
+          <img src="assets/hand.svg" class="heroHand">
+        </div>
+    </div>
+  </section>
+  <section id ="about" class="About"> <!-- About -->
+    <div class="aboutTitle">About</div>
+    <div class="aboutDesc"> 
+      Figuring out what career you want to indulge in for the rest of your life at the ripe age of 15-18 is certainly daunting. With a focus on allowing students to explore and build connections with professionals who have devoted their lives to their careers, we will help you figure out what is right for you! Through presentations and hands-on research opportunities, students who work with us will develop their passions and build a strong resume to get a head start and stand out in their high school journey.
+    </div>
+
+  </section>
+
+  <section id="meetTheTeam" class ="meetTheTeam"> <!-- Meet the Team -->
+    <div class="meetTitle">Meet the Team</div>
+    <div class="meetImgContainer">
+      <div class="meetImgText">
+        <img src="assets/William.png" class="meetImg" >
+        <div class="meetTitleText">William Peng</div>
+        <div style="text-align: center;">Cofounder / CEO</div>
+      </div>
+      <div class="meetImgText">
+        <img src="assets/Tina.png" class="meetImg">
+        <div class="meetTitleText">Tina A.</div>
+        <div style="text-align: center;">Cofounder / CFO</div>
+      </div>
+      <div class="meetImgText">
+        <img src="assets/Andrew.png" class="meetImg" >
+        <div class="meetTitleText">Andrew Mao</div>
+        <div style="text-align: center;">COO</div>
+      </div>
+      <div class="meetSpecialKaris">
+        <img src="assets/Karis.png" class="meetImg">
+        <div class="meetTitleText">Karis Lee</div>
+        <div style="text-align: center;">Secretary</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="FAQ" class="FAQ"> <!-- FAQ -->
+  <div class="FAQTitle">FAQ</div>
+  <div class="FAQObjects">
+    <style>
+      body {
+          font-family: "Readex Pro", sans-serif;
+          margin: 0;
+          padding: 0;
+          font-size: 1rem;
+          color: #3D68BB; /* Default font color for body text */
+      }
+      .faq-container {
+          max-width: calc(100vw - 16.86vw); /* 8.43vw on each side */
+          margin: 0 auto;
+          padding: 20px;
+      }
+      .faq-item {
+          margin-bottom: 10px;
+      }
+      .question {
+          background-color: #C0D4FD;
+          padding: 10px;
+          cursor: pointer;
+          border: none; /* Remove border */
+          border-radius: 4px;
+          display: flex;
+          align-items: center;
+          font-weight: bold; /* Make questions bold */
+          color: #3D68BB; /* Font color for questions */
+      }
+      .question::after {
+          content: '+';
+          font-size: 1.5rem; /* Slightly larger for better visibility */
+          margin-left: auto;
+          transition: transform 0.3s ease;
+      }
+      .question.active::after {
+          content: '-';
+      }
+      .answer {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s ease, background-color 0.3s ease;
+          background-color: transparent; /* Default background color for closed state */
+          padding: 0 10px;
+          border: none; /* Remove border */
+          color: white; /* Font color for answers */
+          box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+          word-wrap: break-word; /* Ensure text wraps properly */
+      }
+      .answer.show {
+        color: #3D68BB;
+          max-height: 200px; /* Increased height to accommodate more text */
+          padding: 10px;
+          background-color: transparent; /* Transparent background for opened state */
+      }
+
+      /* Media query for screens less than 1126px */
+      @media (max-width: 1126px) {
+          .faq-container {
+              max-width: calc(100% - 40px); /* 20px margin on each side */
+              padding: 20px;
+              margin: 0 auto;
+          }
+      }
+
+      /* Media query for screens less than 600px */
+      @media (max-width: 600px) {
+          .faq-container {
+              padding: 10px;
+          }
+          .question {
+              font-size: 0.9rem; /* Slightly smaller font size for smaller screens */
+              padding: 8px;
+          }
+          .answer {
+              font-size: 0.9rem; /* Slightly smaller font size for smaller screens */
+              padding: 8px;
+          }
+      }
+  </style>
+
+<div class="faq-container">
+  <div class="faq-item">
+      <div class="question">Why is it important to start career exploration early?</div>
+      <div class="answer">Starting early helps you understand your interests and strengths, make informed decisions, develop relevant skills, and build a network. It also reduces uncertainty and boosts motivation, making your high school planning more effective and adaptable.</div>
+  </div>
+  <div class="faq-item">
+      <div class="question">Who can participate in Youth Career Connect programs?</div>
+      <div class="answer">Our programs are open to all middle school students, but high school students may also contact us if they wish to connect with a professional or work on/mentor a research project. Even motivated elementary school students may be able to join us in small research projects!</div>
+  </div>
+  <div class="faq-item">
+      <div class="question">What types of programs and services does Youth Career Connect offer?</div>
+      <div class="answer">YCC offers connections to professionals in numerous fields as well as research projects for middle school students to explore their interests and find their passions. We also provide volunteer opportunities for high school students who wish to mentor research projects and learn about different careers themselves!</div>
+  </div>
+  <div class="faq-item">
+      <div class="question">Is there a cost to participate in Youth Career Connect programs?</div>
+      <div class="answer">There is no cost to participate with us. YCC is committed to providing all students the resources and opportunities needed for success in their high school journey. Just fill out the sign-up form and we’ll contact you about your interests!</div>
+  </div>
+  <div class="faq-item">
+      <div class="question">How can I support Youth Career Connect?</div>
+      <div class="answer">Donations would be greatly appreciated! As a nonprofit, donation money would be put into expanding our services to more students, enhancing research projects, and connecting with more professionals in sought-after fields.</div>
+  </div>
+</div>
+
+  <script>
+      document.querySelectorAll('.faq-item').forEach(item => {
+          const question = item.querySelector('.question');
+          const answer = item.querySelector('.answer');
+
+          question.addEventListener('click', () => {
+              question.classList.toggle('active');
+              answer.classList.toggle('show');
+          });
+      });
+  </script>
+  </section>
+  <section class="footer">
+    <div class="links">
+      <div class="leftLinks">
+        <a>About</a>
+        <a>Meet the Team</a>
+        <a>Sponsors</a>
+        <a>FAQ</a>
+      </div>
+      <div class="rightLinks">
+        <a class="rightLink">Youth Career Connect</a>
+        <a class="rightLink">youthcareerconnectmail@gmail.com </a>
+        <a class="rightLink">@youthcareercontact on instagram</a>
+        <a class="rightLink">925-352-0356</a>
+      </div>
+    </div>
+    <img src="assets/line.svg" class="line">
+    <div class="credit">
+      <div class="leftCredit">
+        Design & Development by Mithilan.k on Instagram
+      </div>
+      <div class="rightCredit">
+        Mithilank.com </div>
+    </div>
+  
+  </section>
+
+
+  </body>
+</html>
