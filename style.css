@@ -269,7 +269,7 @@ html, body {
     }
 
     .aboutDesc {
-        font-size: 1.5rem;
+        font-size: 1rem;
         color:#3D68BB;
         padding-left: 8.43vw;
         padding-right: 8.43vw;
@@ -547,6 +547,7 @@ html, body {
 
         width: 100%;
         padding-bottom: 2.38rem;
+        font-size: 1.5rem;
     }
 
     .heroButtonContainer {
@@ -614,6 +615,8 @@ html, body {
         text-align: center;
         font-family: "Readex Pro", sans-serif;
         text-align: left;
+
+        font-size: 1.5rem;
 
     }
 
